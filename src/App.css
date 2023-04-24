@@ -38,8 +38,9 @@
   }
 }
 body{
-  background: #dbd2ca;
-  background-image: url('../src/components/images/backgroundNav.png');
+  background: #e8e0d9;
+  background-image: url('../src/components/images/bg1.jpg');
   background-size: cover;
   background-position: center;
 }
+
