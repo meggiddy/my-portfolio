@@ -39,7 +39,7 @@ function NavBar() {
                 href="https://www.linkedin.com/in/maggie-muriithi/"
                 target="_blank"
                 rel="noreferrer"
-                className={"hover:animate-bounce hover:p-3 hover:text-fuchsia-300"}
+                className={"hover:animate-bounce hover:p-3 hover:text-sky-300"}
               >
                 <FaLinkedin className="text-2xl ml-4" />
               </a>
@@ -47,7 +47,7 @@ function NavBar() {
                 href="https://github.com/meggiddy"
                 target="_blank"
                 rel="noreferrer"
-                className={"hover:animate-bounce hover:p-3 hover:text-fuchsia-300"}
+                className={"hover:animate-bounce hover:p-3 hover:text-sky-300"}
               >
                 <FaGithub className="text-2xl ml-4" />
               </a>

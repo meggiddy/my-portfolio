@@ -4,25 +4,30 @@ import { useState } from "react";
 import Swal from "sweetalert2";
 
 function Contacts() {
-
   const [toSend, setToSend] = useState({
     from_name: "",
     message: "",
     reply_to: "",
   });
+  const [submitEnabled, setSubmitEnabled] = useState(true);
   const onSubmit = (e) => {
     e.preventDefault();
+    setSubmitEnabled(false);
     send("service_kgam9sy", "template_u2cq2aq", toSend, "4rVcoOIypiCHffMAe")
       .then((response) => {
+        setSubmitEnabled(true);
+
         Swal.fire({
           title: "Sent!",
           text: "Your message has been sent.",
           icon: "success",
           timer: 1000,
         });
-        setToSend({ from_name: "", message: "", reply_to: ""});
+        setToSend({ from_name: "", message: "", reply_to: "" });
       })
       .catch((error) => {
+        setSubmitEnabled(true);
+
         Swal.fire({
           title: "Error!",
           text: "Oops...,Something went wrong. Please try again later.",
@@ -116,6 +121,7 @@ function Contacts() {
                   Cancel
                 </button>
                 <button
+                  disabled={!submitEnabled}
                   type="submit"
                   className="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
