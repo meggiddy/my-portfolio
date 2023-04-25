@@ -8,17 +8,19 @@ import Footer from "./components/Footer";
 import About from "./components/About";
 import Contacts from "./components/Contacts";
 import Resume from "./components/Resume";
+import ScrollToTopButton from "./components/ScrollToTopButton";
 
 function App() {
   return (
     <>
       <NavBar />
       <Routes>
-        <Route path="/" element={<LandingPage/>} />
-        <Route path="/about" element={<About/>} />
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/about" element={<About />} />
         <Route path="/contacts" element={<Contacts />} />
         <Route path="/resume" element={<Resume />} />
       </Routes>
+      <ScrollToTopButton />
       <Footer />
     </>
   );

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { Nav, NavLink, Bars, NavMenu } from "./NavbarElements";
 import logo from "./images/MaggieLogo.png";
-import { hover } from "@testing-library/user-event/dist/hover";
 
 function NavBar() {
   const [showMenu, setShowMenu] = useState(false);
@@ -17,7 +16,7 @@ function NavBar() {
 
 
   return (
-    <>
+    <div className="">
       <div className="flex items-center">
         <NavLink to="/"><img src={logo} alt="Logo" className="w-72 -my-10" /></NavLink>
         <div className="ml-auto">
@@ -57,7 +56,7 @@ function NavBar() {
         </div>
       </div>
       <hr className="my-2 border-white" />
-    </>
+    </div>
   );
 }
 
