@@ -1,6 +1,39 @@
 import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
+import { send } from "emailjs-com";
+import { useState } from "react";
+import Swal from "sweetalert2";
 
 function Contacts() {
+
+  const [toSend, setToSend] = useState({
+    from_name: "",
+    message: "",
+    reply_to: "",
+  });
+  const onSubmit = (e) => {
+    e.preventDefault();
+    send("service_kgam9sy", "template_u2cq2aq", toSend, "4rVcoOIypiCHffMAe")
+      .then((response) => {
+        Swal.fire({
+          title: "Sent!",
+          text: "Your message has been sent.",
+          icon: "success",
+          timer: 1000,
+        });
+        setToSend({ from_name: "", message: "", reply_to: ""});
+      })
+      .catch((error) => {
+        Swal.fire({
+          title: "Error!",
+          text: "Oops...,Something went wrong. Please try again later.",
+          icon: "error",
+          confirmButtonText: "OK",
+        });
+      });
+  };
+  const handleChange = (e) => {
+    setToSend({ ...toSend, [e.target.name]: e.target.value });
+  };
   return (
     <>
       <h1 className="font-serif flex justify-center text-6xl md:text-6xl mt-40 mb-32 md:pr-12">
@@ -39,24 +72,28 @@ function Contacts() {
               Drop me a line
             </h4>
             <form
-              action="https://formspree.io/f/mayvqnwg"
+              onSubmit={onSubmit}
               method="POST"
               className="flex row flex-col w-full"
             >
               <div className="flex align-center">
                 <input
                   type="text"
-                  id="name"
-                  name="name"
+                  id="from_name"
+                  name="from_name"
                   placeholder="Your Name"
+                  value={toSend.from_name}
+                  onChange={handleChange}
                   className="flex-1 bg-transparent w-full px-4 py-2 mb-4 border-b-2 border-white text-gray-900 placeholder:text-gray-400 focus:border-blue-500 focus:outline-none"
                 />
               </div>
               <div className="flex col-12 align-center">
                 <input
-                  type="email"
-                  id="email"
-                  name="email"
+                  type="reply_to"
+                  id="reply_to"
+                  value={toSend.reply_to}
+                  onChange={handleChange}
+                  name="reply_to"
                   placeholder="Your Email"
                   className="flex-1 bg-transparent w-full px-4 py-2 mb-4 border-b-2 border-white focus:border-blue-500 focus:outline-none"
                 />
@@ -65,6 +102,8 @@ function Contacts() {
                 <textarea
                   name="message"
                   id="message"
+                  value={toSend.message}
+                  onChange={handleChange}
                   className="flex-1 bg-transparent w-full h-40 px-4 py-2 mb-4 border-b-2 border-white focus:border-blue-500 focus:outline-none"
                   placeholder="Type Message Here"
                 ></textarea>

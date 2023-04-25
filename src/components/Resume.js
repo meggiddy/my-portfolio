@@ -1,4 +1,3 @@
-import { GrCertificate } from "react-icons/gr";
 import { FaBriefcase } from "react-icons/fa";
 
 function Resume() {
