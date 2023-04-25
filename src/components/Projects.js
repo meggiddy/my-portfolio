@@ -19,14 +19,16 @@ function Project({ project }) {
       onMouseLeave={handleMouseLeave}
     >
       <img
-        className="w-full m-4 rounded-lg object-cover object-center"
+        className="w-96 m-4 rounded-lg"
         src={project.img}
         alt="To Do List"
       ></img>
       {showButton && (
+        <div className="absolute top-0 w-full h-full rounded-lg bg-white/50 flex items-center justify-center">
           <button className="bg-white text-black px-4 py-2 rounded">
             View Project
           </button>
+        </div>
       )}
     </div>
   );
@@ -45,7 +47,7 @@ function Projects() {
         <label className="px-10 bg-slate-400/50 rounded-full">Rails</label>
       </div>
 
-      <div className="flex grid-cols-3 gap-4 justify-center mr-8">
+      <div className="flex gap-4 justify-center mr-8">
         {myProjects.map((project) => (
           <Project project={project} />
         ))}
