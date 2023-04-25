@@ -4,7 +4,7 @@ function Project({ project }) {
   return (
     <div className="col-lg-4 col-6 mb-4 shuffle-item shuffle-item--visible">
       <div className="relative rounded hover-wrapper">
-        <img src={project.img} alt="" className="rounded w-full block" />
+        <img src={project.img} alt="" className="rounded w-96 block" />
         <div
           className="absolute top-0 w-full h-full rounded-lg bg-white/50 flex items-center justify-center opacity-0 transition-opacity duration-200"
           onMouseEnter={(e) => {
@@ -45,6 +45,7 @@ function Projects() {
         <label className="px-10 bg-slate-400/50 rounded-full">React</label>
         <label className="px-10 bg-slate-400/50 rounded-full">Ruby</label>
         <label className="px-10 bg-slate-400/50 rounded-full">Rails</label>
+        <label className="px-10 bg-slate-400/50 rounded-full">Figma</label>
         <hr className="my-2 border-white" />
       </div>
 
