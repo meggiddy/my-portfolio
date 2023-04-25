@@ -1,4 +1,5 @@
 import { myProjects } from "./ProjectList";
+import { Link } from "react-router-dom";
 
 function Project({ project }) {
   return (
@@ -14,12 +15,11 @@ function Project({ project }) {
             e.currentTarget.classList.remove("opacity-100");
           }}
         >
-          <a
-            href="/"
+          <Link to={`/projects/${project.title}`}
             className="bg-white text-black px-4 py-2 rounded"
           >
             View Project
-          </a>
+          </Link>
         </div>
       </div>
       <div className="mt-4 flex justify-center">
