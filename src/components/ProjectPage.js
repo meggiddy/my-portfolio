@@ -7,19 +7,19 @@ function ProjectPage() {
   const { title } = useParams();
   const project = myProjects.find((p) => p.title === title);
   return (
-    <div className="">
+    <div>
       <div>
         <h1 className="font-serif flex justify-center text-6xl md:text-6xl mt-40 mb-32 md:pr-12">
           {project.title}
         </h1>
       </div>
-      <div className="flex md:flex-col">
-        <div className="m-10 justify-center flex-1 flex flex-row gap-10">
-          <div className="w-96">
-            <img src={project.img} alt=""></img>
+      <div className="flex flex-col m-4">
+        <div className="justify-center flex-1 flex flex-row gap-10">
+          <div className="max-w-96 ml-4 w-full h-full ">
+            <img className="w-full h-auto rounded" src={project.img} alt=""></img>
           </div>
-          <div className="mb-lg-0 self-center">
-            <div className="grid grid-cols-2 gap-4 sm:grid-cols-1">
+          <div className="flex-row self-center gap-4">
+            <div className="grid grid-cols-2 md:grid-col gap-6">
               <div className="mb-5">
                 <div className="flex items-center">
                   <FaCalendarAlt className="rounded" />
@@ -53,10 +53,10 @@ function ProjectPage() {
                   </div>
                 </div>
               </div>
-              <div class="mb-5">
-                <div class="flex items-center">
+              <div className="mb-5">
+                <div className="flex items-center">
                   <FiLink className="rounded" />
-                  <div class="ml-3">
+                  <div className="ml-3">
                     <h4 className="font-bold text-lg">Project Demo</h4>
                     <p className="bg-white/50 rounded-lg p-2">
                       <a href="/">my link is here</a>
