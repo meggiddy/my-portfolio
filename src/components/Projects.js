@@ -51,7 +51,7 @@ function Projects() {
 
       <div className="flex mt-10 mx-4 gap-4 justify-center">
         {myProjects.map((project) => (
-          <Project project={project} />
+          <Project key={project.title} project={project} />
         ))}
       </div>
     </>

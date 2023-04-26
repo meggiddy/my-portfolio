@@ -13,67 +13,77 @@ function ProjectPage() {
           {project.title}
         </h1>
       </div>
-      <div className="flex flex-col m-4">
-        <div className="justify-center flex-1 flex flex-row gap-10">
-          <div className="max-w-96 ml-4 w-full h-full ">
-            <img className="w-full h-auto rounded" src={project.img} alt=""></img>
-          </div>
-          <div className="flex-row self-center gap-4">
-            <div className="grid grid-cols-2 md:grid-col gap-6">
-              <div className="mb-5">
-                <div className="flex items-center">
-                  <FaCalendarAlt className="rounded" />
-                  <div className="ml-3">
-                    <h4 className="font-bold text-lg">Date</h4>
-                    <p className="bg-white/50 rounded-lg p-2">Mar 09, 2023</p>
-                  </div>
+      <div className="container mx-auto">
+      <div className="flex flex-col md:flex-row">
+        <div className="md:w-1/2 mb-5">
+          <img
+            src={project.img}
+            className="w-full max-w-md mx-auto md:max-w-none md:block"
+            alt=""
+          />
+        </div>
+        <div className="md:w-1/2 md:pl-8">
+          <div className="flex flex-wrap -mx-2 justify-center">
+            <div className="w-full sm:w-1/2 px-2 mb-4 sm:mb-0">
+              <div className="flex items-center">
+                <FaCalendarAlt className="text-2xl text-gray-600 mr-2" />
+                <div>
+                  <h4 className="text-lg font-bold">Date</h4>
+                  <p className="bg-gray-100 rounded-lg p-2">
+                    {project.date}
+                  </p>
                 </div>
               </div>
-              <div className="mb-5">
-                <div className="flex items-center">
-                  <FaUserCircle className="rounded" />
-                  <div className="ml-3">
-                    <h4 className="font-bold text-lg">Client</h4>
-                    <p className="bg-white/50 rounded-lg p-2">
-                      {project.client}
+            </div>
+            <div className="w-full sm:w-1/2 px-2 mb-4 sm:mb-0">
+              <div className="flex items-center">
+                <FaUserCircle className="text-2xl text-gray-600 mr-2" />
+                <div>
+                  <h4 className="text-lg font-bold">Client</h4>
+                  <p className="bg-gray-100 rounded-lg p-2">
+                    {project.client}
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="w-full sm:w-1/2 px-2 mb-4 sm:mb-0">
+              <div className="flex items-center">
+                <FiFolder className="text-2xl text-gray-600 mr-2" />
+                <div>
+                  <h4 className="text-lg font-bold">Categories</h4>
+                  {project.categories.map((category) => (
+                    <p className="bg-gray-100 rounded-lg mb-2 p-2" key={category}>
+                      {category}
                     </p>
-                  </div>
+                  ))}
                 </div>
               </div>
-              <div className="mb-5">
-                <div className="flex items-center">
-                  <FiFolder className="rounded" />
-                  <div className="ml-3">
-                    <h4 className="font-bold text-lg">Categories</h4>
-                    {project.categories.map((category) => (
-                      <p className="bg-white/50 rounded-lg mb-2 p-2">
-                        {category}
-                      </p>
-                    ))}
-                  </div>
-                </div>
-              </div>
-              <div className="mb-5">
-                <div className="flex items-center">
-                  <FiLink className="rounded" />
-                  <div className="ml-3">
-                    <h4 className="font-bold text-lg">Project Demo</h4>
-                    <p className="bg-white/50 rounded-lg p-2">
-                      <a href="/">my link is here</a>
-                    </p>
-                  </div>
+            </div>
+            <div className="w-full sm:w-1/2 px-2 mb-4 sm:mb-0">
+              <div className="flex items-center">
+                <FiLink className="text-2xl text-gray-600 mr-2" />
+                <div>
+                  <h4 className="text-lg font-bold">Project Demo</h4>
+                  <p className="bg-gray-100 rounded-lg p-2">
+                    <a href={project.demoLink}>{project.demoLink}</a>
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="m-4 mb-10">
-          <h3 className="font-serif flex justify-center mb-2 font-bold text-xl md:text-xl">
-            Project Description
-          </h3>
-          <div>{project.requirements}</div>
+      </div>
+      <div className="w-full mt-8">
+        <div className="content">
+          <h4 className="font-serif flex justify-center mb-2 font-bold text-xl md:text-xl">Project Description</h4>
+          <p>{project.description}</p>
+          <h4 id="project-repo">Project Repo</h4>
+          <p>
+            GitHub Repo <a href={project.repoLink}>{project.repoLink}</a>
+          </p>
         </div>
       </div>
+    </div>
     </div>
   );
 }
