@@ -76,14 +76,18 @@ function ProjectPage() {
         </div>
         <div className="w-full mt-8">
           <div className="content">
-            <h4 className="font-serif flex justify-center mb-2 font-bold text-xl">
+            <h4 className="font-serif flex my-6 font-bold text-xl">
               Project Description
             </h4>
             <p>{project.description}</p>
-            <h4 id="project-repo">Project Repo</h4>
-            <a href={project.repoLink}>
-              <p>GitHub Repo</p>
-            </a>
+            <h4 className="font-serif flex my-6 font-bold text-xl">
+              Project Repo
+            </h4>
+            <div className="mb-10">
+              <a href={project.repoLink}>
+                <p className="p-5 bg-white/50 w-48 justify-center rounded hover:bg-white">GitHub Repo</p>
+              </a>
+            </div>
           </div>
         </div>
       </div>
