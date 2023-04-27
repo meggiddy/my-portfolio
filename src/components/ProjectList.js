@@ -4,7 +4,7 @@ export const myProjects = [
     img: require("./projectsHeros/todolist.jpg"),
     date: "19, April 2023",
     client: "Self",
-    categories: ["ReactJs"],
+    categories: ["ReactJs", "NodeJS"],
     description:
       "A minimalist To Do List. Its is a simple application designed to help users manage their tasks or activities efficiently. It allows users to create a list of tasks they need to complete, set deadlines, and mark tasks as completed once they finish them. Most to-do apps have a user-friendly interface that allows users to easily add, edit, and delete tasks. Some apps even come with additional features such as task categorization, prioritization, and reminders. To-do apps can be used for personal task management, as well as for team collaboration in the workplace. They are a great way to keep track of your daily or weekly goals, stay organized, and increase productivity.",
     demoLink:'https://my-task-manager-git-main-meggiddy.vercel.app',
