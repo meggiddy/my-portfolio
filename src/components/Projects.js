@@ -5,17 +5,19 @@ function Project({ project }) {
   return (
     <div className="col-lg-4 col-6 mb-4 shuffle-item shuffle-item--visible">
       <div className="relative rounded hover-wrapper">
-        <img src={project.img} alt="" className="rounded w-96 block" />
-        <div
-          className="hover-overlay"
-          // opacity-0 transition-opacity duration-200
+        <img
+          src={project.img}
+          alt=""
+          className="rounded w-96 block" // opacity-0 transition-opacity duration-200
           onMouseEnter={(e) => {
+            console.log(e.currentTarget);
             e.currentTarget.classList.add("opacity-100");
           }}
           onMouseLeave={(e) => {
             e.currentTarget.classList.remove("opacity-100");
           }}
-        >
+        />
+        <div className="hover-overlay">
           <Link
             to={`/projects/${project.title}`}
             className="bg-white text-black px-4 py-2 rounded"
@@ -25,12 +27,7 @@ function Project({ project }) {
         </div>
       </div>
       <div className="mt-4 flex justify-center">
-        <h3 className="text-sm text-gray-700">
-          <a href="/">
-            <span aria-hidden="true" className="absolute inset-0" />
-            {project.title}
-          </a>
-        </h3>
+        <h3 className="text-sm text-gray-700">{project.title}</h3>
       </div>
     </div>
   );
