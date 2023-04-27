@@ -7,7 +7,8 @@ export const myProjects = [
     categories: ["ReactJs"],
     description:
       "A minimalist To Do List. Its is a simple application designed to help users manage their tasks or activities efficiently. It allows users to create a list of tasks they need to complete, set deadlines, and mark tasks as completed once they finish them. Most to-do apps have a user-friendly interface that allows users to easily add, edit, and delete tasks. Some apps even come with additional features such as task categorization, prioritization, and reminders. To-do apps can be used for personal task management, as well as for team collaboration in the workplace. They are a great way to keep track of your daily or weekly goals, stay organized, and increase productivity.",
-    demoLink: "github.com",
+    demoLink:'https://my-task-manager-git-main-meggiddy.vercel.app',
+    repoLink: "https://github.com/meggiddy/to-do-list",
   },
   {
     title: "Maggify",
@@ -26,7 +27,7 @@ export const myProjects = [
     categories: ["Ruby", "Ruby on Rails"],
     description:
       "The simple recipe app is a web application that allows users to easily search for and access a variety of recipes. The app is designed to simplify the process of finding, organizing, and preparing recipes. Users can browse through a selection of categories such as breakfast, lunch, dinner, or desserts, and filter their search by dietary preferences or ingredients. Once a recipe is selected, users can view the ingredients and detailed instructions, and even save their favorite recipes for future use. The app can also provide suggestions for grocery lists based on selected recipes and offer personalized recommendations based on past search history. Overall, the simple recipe app aims to make meal planning and preparation easier and more convenient for users of all cooking skill levels.",
-    demoLink: "github.com",
+    demoLink: "",
   },
   {
     title: "Follow the mouse",

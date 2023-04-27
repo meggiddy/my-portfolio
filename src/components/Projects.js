@@ -7,7 +7,8 @@ function Project({ project }) {
       <div className="relative rounded hover-wrapper">
         <img src={project.img} alt="" className="rounded w-96 block" />
         <div
-          className="absolute top-0 w-full h-full rounded-lg bg-white/50 flex items-center justify-center opacity-0 transition-opacity duration-200"
+          className="hover-overlay"
+          // opacity-0 transition-opacity duration-200
           onMouseEnter={(e) => {
             e.currentTarget.classList.add("opacity-100");
           }}
@@ -15,7 +16,8 @@ function Project({ project }) {
             e.currentTarget.classList.remove("opacity-100");
           }}
         >
-          <Link to={`/projects/${project.title}`}
+          <Link
+            to={`/projects/${project.title}`}
             className="bg-white text-black px-4 py-2 rounded"
           >
             View Project
