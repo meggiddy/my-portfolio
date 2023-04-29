@@ -42,12 +42,12 @@ export const myProjects = [
   {
     title: "Hangman",
     img: require("./projectsHeros/hang.jpg"),
-    date: "",
+    date: "05, June 2022",
     client: "Self",
     categories: ["JavaScript"],
     description:
-      "A fun mini Javascript project. This project was built purely with JS.",
-    demoLink: "github.com",
+      "A fun mini Javascript project. This project was built purely with HTML, CSS and JS.",
+    demoLink: "https://hangman-eight-dusky.vercel.app",
   },
   {
     title: "Figma Design",
