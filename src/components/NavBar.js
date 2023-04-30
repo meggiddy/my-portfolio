@@ -22,7 +22,7 @@ function NavBar() {
         <div className="ml-auto">
           <Nav>
             <Bars onClick={toggleMenu}  />
-            <NavMenu show={showMenu}>
+            <NavMenu show={showMenu}className={` ${showMenu ? "rounded-lg bg-white/70 mx-4" : ""}`}>
               <NavLink to="/about" activeclassname="active" onClick={closeMenu} className={"hover:animate-bounce hover:p-3 hover:text-sky-400"}>
                 About
               </NavLink>

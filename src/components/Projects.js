@@ -39,7 +39,7 @@ function Projects() {
       <h1 className="font-serif flex justify-center text-6xl md:text-6xl mt-40 mb-32 md:pr-12">
         Projects
       </h1>
-      <div className="flex flex-row gap-4 justify-center">
+      <div className="flex flex-wrap flex-row gap-4 justify-center">
         <label className="px-10 bg-slate-400/50 rounded-full">All</label>
         <label className="px-10 bg-slate-400/50 rounded-full">React</label>
         <label className="px-10 bg-slate-400/50 rounded-full">Ruby</label>
@@ -48,7 +48,7 @@ function Projects() {
         <hr className="my-2 border-white" />
       </div>
 
-      <div className="flex mt-10 mx-4 gap-4 justify-center">
+      <div className="flex flex-wrap mt-10 mx-4 gap-4 justify-center">
         {myProjects.map((project) => (
           <Project key={project.title} project={project} />
         ))}
