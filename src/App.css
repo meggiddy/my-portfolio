@@ -42,6 +42,7 @@ body{
   background-image: url('../src/components/images/bg1.jpg');
   background-size: cover;
   background-position: center;
+  margin: 5px;
 }
 .hover-wrapper {
   position: relative;
