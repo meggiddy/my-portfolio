@@ -1,5 +1,6 @@
 import { GrCertificate } from "react-icons/gr";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import AnimateOnScroll from "./AnimateOnScroll";
 
 function LandingPage() {
   return (
@@ -56,6 +57,7 @@ function LandingPage() {
           </div>
         </div>
       </div>
+
       <div className="m-5 p-2 bg-white/30 rounded-xl">
         <div className="flex-grow">
           <h2 className="text-2xl md:text-3xl font-bold mt-10 text-center mb-10">
@@ -109,59 +111,62 @@ function LandingPage() {
           </div>
         </div>
       </div>
-      <div className="justify-center m-5 p-2 bg-white/30 rounded-xl">
-        <h2 className="text-2xl md:text-3xl font-bold mt-10 text-center mb-10">
-          Education
-        </h2>
-        <div className="flex flex-wrap md:flex-nowrap">
-          <div className="flex flex-grow items-center md:border-r-2 md:ml-4 border-white pb-3 mb-3">
-            <div className="m-3">
-              <GrCertificate className="w-10 h-10" />
+
+      <AnimateOnScroll>
+        <div className="justify-center m-5 p-2 bg-white/30 rounded-xl">
+          <h2 className="text-2xl md:text-3xl font-bold mt-10 text-center mb-10">
+            Education
+          </h2>
+          <div className="flex flex-wrap md:flex-nowrap">
+            <div className="flex flex-grow items-center md:border-r-2 md:ml-4 border-white pb-3 mb-3">
+              <div className="m-3">
+                <GrCertificate className="w-10 h-10" />
+              </div>
+              <div>
+                <h4 className="mt-3 text-md font-semibold leading-6 text-gray-900">
+                  Professional Certificate in Software Engineering | Fullstack
+                  Development
+                </h4>
+                <p className="text-gray-600 m-2 text-sm">MORINGA SCHOOL</p>
+              </div>
             </div>
-            <div>
-              <h4 className="mt-3 text-md font-semibold leading-6 text-gray-900">
-                Professional Certificate in Software Engineering | Fullstack
-                Development
-              </h4>
-              <p className="text-gray-600 m-2 text-sm">MORINGA SCHOOL</p>
+            <div className="flex flex-grow items-center md:border-r-2 md:ml-4 border-white pb-3 mb-3">
+              <div className="m-3">
+                <GrCertificate className="w-10 h-10" />
+              </div>
+              <div>
+                <h4 className="mt-3 text-md font-semibold leading-6 text-gray-900">
+                  Professional Certificate in Responsive Web Design | Fullstack
+                  Development
+                </h4>
+                <p className="text-gray-600 m-2 text-sm">FREECODECAMP SCHOOL</p>
+              </div>
             </div>
-          </div>
-          <div className="flex flex-grow items-center md:border-r-2 md:ml-4 border-white pb-3 mb-3">
-            <div className="m-3">
-              <GrCertificate className="w-10 h-10" />
+            <div className="flex flex-grow items-center md:border-r-2 md:ml-4 border-white pb-3 mb-3">
+              <div className="m-3">
+                <GrCertificate className="w-10 h-10" />
+              </div>
+              <div>
+                <h4 className="mt-3 text-md font-semibold leading-6 text-gray-900">
+                  Professional Certificate in React Native
+                </h4>
+                <p className="text-gray-600 m-2 text-sm">CODECADEMY SCHOOL</p>
+              </div>
             </div>
-            <div>
-              <h4 className="mt-3 text-md font-semibold leading-6 text-gray-900">
-                Professional Certificate in Responsive Web Design | Fullstack
-                Development
-              </h4>
-              <p className="text-gray-600 m-2 text-sm">FREECODECAMP SCHOOL</p>
-            </div>
-          </div>
-          <div className="flex flex-grow items-center md:border-r-2 md:ml-4 border-white pb-3 mb-3">
-            <div className="m-3">
-              <GrCertificate className="w-10 h-10" />
-            </div>
-            <div>
-              <h4 className="mt-3 text-md font-semibold leading-6 text-gray-900">
-                Professional Certificate in React Native
-              </h4>
-              <p className="text-gray-600 m-2 text-sm">CODECADEMY SCHOOL</p>
-            </div>
-          </div>
-          <div className="flex flex-grow items-center md:ml-4 pb-3 mb-3">
-            <div className="m-3">
-              <GrCertificate className="w-10 h-10" />
-            </div>
-            <div>
-              <h4 className="mt-3 text-md font-semibold leading-6 text-gray-900">
-                Professional Certificate in SQL
-              </h4>
-              <p className="text-gray-600 m-2 text-sm">CODECADEMY SCHOOL</p>
+            <div className="flex flex-grow items-center md:ml-4 pb-3 mb-3">
+              <div className="m-3">
+                <GrCertificate className="w-10 h-10" />
+              </div>
+              <div>
+                <h4 className="mt-3 text-md font-semibold leading-6 text-gray-900">
+                  Professional Certificate in SQL
+                </h4>
+                <p className="text-gray-600 m-2 text-sm">CODECADEMY SCHOOL</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </AnimateOnScroll>
     </div>
   );
 }

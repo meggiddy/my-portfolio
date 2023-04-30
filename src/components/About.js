@@ -4,12 +4,12 @@ function About() {
     <>
       <div className="flex flex-col mb-20">
         <div className="w-full">
-          <h1 className="font-serif pl-5 text-6xl md:text-6xl mt-40 mb-32 md:pr-12">
-            Who is Maggie Muriithi?
+          <h1 className="font-serif line-clamp-1 md:line-clamp-2 pl-5 text-4xl md:text-6xl mt-10 md:mt-40 md:mb-32 md:pr-12">
+            Who is Maggie?
           </h1>
         </div>
         <div className="flex flex-col md:flex-row m-5">
-          <div className="md:w-1/2 ml-20 justify-center">
+          <div className="md:w-1/2 md:ml-20 justify-center">
             <img className="w-96 md:w-500px rounded-lg" alt="hero-pic" src={Hero}></img>
           </div>
           <div className="md:w-1/2">
