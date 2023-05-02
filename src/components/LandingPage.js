@@ -19,30 +19,6 @@ function LandingPage() {
           <p className="mx-2">
             I love working with my hands to make magic happen.
           </p>
-          <p className="mx-2 my-4">
-            View my{" "}
-            <a
-              className=" bg-white/50 rounded p-2 hover:bg-sky-300 active:bg-sky-300"
-              href="/projects"
-            >
-              Projects
-            </a>
-            ,
-            <a
-              className=" bg-white/50 rounded p-2 hover:bg-sky-300 active:bg-sky-300"
-              href="/resume"
-            >
-              Resume
-            </a>
-            , or{" "}
-            <a
-              className=" bg-white/50 p-2 rounded hover:bg-sky-300 active:bg-sky-300"
-              href="/contacts"
-            >
-              Contact Me
-            </a>
-            .
-          </p>
           <div className="flex justify-center md:mt-40 mt-10">
             <a
               className="md:mx-2 font-bold hover:bg-sky-300 active:bg-sky-300"
