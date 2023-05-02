@@ -4,11 +4,12 @@ import { Link } from "react-router-dom";
 function Project({ project }) {
   return (
     <div className="col-lg-4 col-6 mb-4 shuffle-item shuffle-item--visible">
-      <div className="relative rounded hover-wrapper">
+      <div className=" flex flex-wrap relative rounded hover-wrapper">
+      {/*<div class="row shuffle-wrapper shuffle" style="position: relative; overflow: hidden; height: 996.781px; transition: height 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;"></div> */}
         <img
           src={project.img}
           alt=""
-          className="rounded w-96 block" // opacity-0 transition-opacity duration-200
+          className="h-auto rounded w-80 block object-cover"
           onMouseEnter={(e) => {
             console.log(e.currentTarget);
             e.currentTarget.classList.add("opacity-100");

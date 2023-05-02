@@ -45,27 +45,27 @@ function LandingPage() {
           </p>
           <div className="flex justify-center md:mt-40 mt-10">
             <a
-              className="md:mx-2 bg-white/50 rounded p-5 hover:bg-sky-300 active:bg-sky-300"
+              className="md:mx-2 font-bold hover:bg-sky-300 active:bg-sky-300"
               href="/about"
             >
               See More About Me{" "}
               <AiOutlineArrowRight
-                className="inline-block mr-2 mb-1"
-                size={18}
+                className="inline-block mr-2 mb-1 animate-ping ml-2 font-xs"
+                size={12}
               />
             </a>
           </div>
         </div>
       </div>
 
-      <div className="m-5 p-2 bg-white/30 rounded-xl">
+      <div className="m-2 p-2 bg-white/30 rounded-xl">
         <div className="flex-grow">
           <h2 className="text-2xl md:text-3xl font-bold mt-10 text-center mb-10">
             Skills and Expertice
           </h2>
           <AnimateOnScroll>
-            <div className="mx-auto pb-20 md:ml-6 md:mt-10 grid grid-cols-2 justify-between gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 lg:mx-10 lg:max-w-none lg:grid-cols-4">
-              <article className="flex max-w-xl flex-col items-start justify-between md:border-r-2">
+            <div className="mx-auto pb-20 md:ml-6 md:mt-10 grid grid-cols-2 justify-between gap-x-4 gap-y-8 border-t border-gray-200 pt-10 sm:mt-16 lg:mx-10 lg:max-w-none lg:grid-cols-4">
+              <article className="flex max-w-xl flex-col items-center justify-between md:border-r-2">
                 <div className="group relative">
                   <h3 className="flex justify-center mt-3 text-lg font-semibold leading-6 text-gray-900">
                     FRONT-END DEVELOPMENT
@@ -115,7 +115,7 @@ function LandingPage() {
         </div>
       </div>
 
-      <div className="justify-center m-5 p-2 bg-white/30 rounded-xl">
+      <div className="justify-center m-2 p-2 bg-white/30 rounded-xl">
         <h2 className="text-2xl md:text-3xl font-bold mt-10 text-center mb-10">
           Education
         </h2>
