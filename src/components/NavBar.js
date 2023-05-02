@@ -39,7 +39,7 @@ function NavBar() {
             <FaGithub className="text-2xl" />
           </a>
         </div>
-        <div className="ml-10 md:ml-auto">
+        <div className="ml-10 mr-6 md:ml-auto">
           <Nav className="menu__cont">
             <Bars onClick={toggleMenu} />
             <NavMenu
