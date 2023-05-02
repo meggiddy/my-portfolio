@@ -9,11 +9,11 @@ function ProjectPage() {
   return (
     <div className="w-full">
       <div>
-        <h1 className="font-serif flex justify-center text-6xl md:text-6xl mt-40 mb-32 md:pr-12">
+        <h1 className="font-serif flex justify-center text-5xl md:text-6xl mt-24 mb-24 md:pr-12">
           {project.title}
         </h1>
       </div>
-      <div className="container ml-4 mr-4">
+      <div className="container">
         <div className="flex flex-col md:flex-row">
           <div className="md:w-1/2 mb-5">
             <img
@@ -23,7 +23,7 @@ function ProjectPage() {
             />
           </div>
           <div className="md:w-1/2 md:pl-8">
-            <div className="flex flex-wrap -mx-2 justify-center">
+            <div className="flex flex-wrap justify-center">
               <div className="w-full sm:w-1/2 px-2 mb-4 sm:mb-0">
                 <div className="flex items-center">
                   <FaCalendarAlt className="text-2xl text-gray-600 mr-2" />
