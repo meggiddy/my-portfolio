@@ -10,7 +10,7 @@ export const myProjects = [
   },
   {
     title: "Car Rental Services",
-    img: require("./projectsHeros/maggify.jpg"),
+    img: require("./projectsHeros/carRental.jpg"),
     date: "",
     client: "Self",
     categories: ["ReactJs", "NodeJS"],
