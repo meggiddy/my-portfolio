@@ -79,4 +79,9 @@ body{
 }
 /* :root{
   --my-div-width: 360px;
-} */
+}*/
+.menu__cont .menu{
+  left: 280px;
+  top: 6px;
+  position: absolute;
+}

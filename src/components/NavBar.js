@@ -15,13 +15,12 @@ function NavBar() {
   };
 
   return (
-    <div className="">
+    <div className="m-1">
       <div className="flex items-center">
         <NavLink to="/">
-          <img src={logo} alt="Logo" className="w-56 -my-10" />
+          <img src={logo} alt="Logo" className="w-56 -my-10 flex flex-0.7" />
         </NavLink>
-
-        <div className="relative top-[-6px] flex ml-auto gap-2 items-center">
+        <div className="w-16 md:hidden relative top-[-6px] flex ml-auto gap-2">
           {" "}
           <a
             href="https://www.linkedin.com/in/maggie-muriithi/"
@@ -40,12 +39,14 @@ function NavBar() {
             <FaGithub className="text-2xl" />
           </a>
         </div>
-        <div className="ml-auto">
-          <Nav>
+        <div className="ml-10 md:ml-auto">
+          <Nav className="menu__cont">
             <Bars onClick={toggleMenu} />
             <NavMenu
               show={showMenu}
-              className={` ${showMenu ? "rounded-lg bg-white/70 mx-4" : ""}`}
+              className={`${
+                showMenu ? "menu rounded-lg w-42 bg-white/80 mx-4" : ""
+              }`}
             >
               <NavLink
                 to="/about"
@@ -87,6 +88,29 @@ function NavBar() {
               >
                 Blog
               </NavLink>
+              <div className="hidden md:top-[-3px] md:flex md:gap-4">
+                {" "}
+                <a
+                  href="https://www.linkedin.com/in/maggie-muriithi/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className={
+                    "hover:animate-bounce hover:p-3 hover:text-sky-300"
+                  }
+                >
+                  <FaLinkedin className="text-2xl" />
+                </a>
+                <a
+                  href="https://github.com/meggiddy"
+                  target="_blank"
+                  rel="noreferrer"
+                  className={
+                    "hover:animate-bounce hover:p-3 hover:text-sky-300"
+                  }
+                >
+                  <FaGithub className="text-2xl" />
+                </a>
+              </div>
             </NavMenu>
           </Nav>
         </div>
