@@ -20,7 +20,7 @@ function NavBar() {
         <NavLink to="/">
           <img src={logo} alt="Logo" className="w-56 -my-10 flex flex-0.7" />
         </NavLink>
-        <div className="w-16 md:hidden relative top-[-6px] flex ml-auto gap-2">
+        <div className="w-16 md:hidden relative top-[-10px] flex ml-auto gap-2">
           {" "}
           <a
             href="https://www.linkedin.com/in/maggie-muriithi/"
@@ -88,7 +88,7 @@ function NavBar() {
               >
                 Blog
               </NavLink>
-              <div className="hidden md:top-[-3px] md:flex md:gap-4">
+              <div className="hidden md:relative md:top-[-5px] md:flex md:gap-4">
                 {" "}
                 <a
                   href="https://www.linkedin.com/in/maggie-muriithi/"
