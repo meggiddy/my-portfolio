@@ -2,9 +2,9 @@ export const myProjects = [
   {
     title: "Maggify",
     img: require("./projectsHeros/maggify.jpg"),
-    date: "",
+    date: "15, April 2023",
     client: "Self",
-    categories: ["ReactJs", "Spotify API"],
+    categories: ["ReactJs", "Spotify API", "Tailwind"],
     description: "A clone of Spotify",
     demoLink: "https://maggify.vercel.app",
     repoLink: "https://github.com/meggiddy/maggify",
@@ -12,16 +12,16 @@ export const myProjects = [
   {
     title: "Car Rental Services",
     img: require("./projectsHeros/carRental.jpg"),
-    date: "",
+    date: "2, May 2023",
     client: "Self",
-    categories: ["ReactJs", "NodeJS"],
+    categories: ["ReactJs", "NodeJS", "Tailwind"],
     description: "A car renting service for tourists",
     demoLink: "github.com",
   },
   {
     title: "To Do List",
     img: require("./projectsHeros/todolist.jpg"),
-    date: "19, April 2023",
+    date: "19, February 2023",
     client: "Self",
     categories: ["ReactJs"],
     description:
