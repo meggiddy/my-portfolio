@@ -6,7 +6,7 @@ export const myProjects = [
     client: "Self",
     categories: ["ReactJs", "Spotify API"],
     description: "A clone of Spotify",
-    demoLink: "github.com",
+    demoLink: "maggify.vercel.app",
   },
   {
     title: "Car Rental Services",
