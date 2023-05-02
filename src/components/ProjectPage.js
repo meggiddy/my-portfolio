@@ -7,13 +7,13 @@ function ProjectPage() {
   const { title } = useParams();
   const project = myProjects.find((p) => p.title === title);
   return (
-    <div className="w-full m-4">
+    <div className="w-full">
       <div>
         <h1 className="font-serif flex justify-center text-5xl md:text-6xl mt-24 mb-24 md:pr-12">
           {project.title}
         </h1>
       </div>
-      <div className="container">
+      <div className="w-96 m-auto">
         <div className="flex flex-col md:flex-row">
           <div className="md:w-1/2 mb-5">
             <img

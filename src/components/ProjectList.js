@@ -50,6 +50,16 @@ export const myProjects = [
       "This project is centered on mouse movements, with the cartoon eyes tracking thecursor wherever it goes. The implementation was done through the use of HTML, CSS, and Javascript.",
     demoLink: "github.com",
   },
+
+  {
+    title: "Figma Design",
+    img: require("./projectsHeros/figma.jpg"),
+    date: "",
+    client: "Self",
+    categories: ["Figma"],
+    description: "A clone of Spotify",
+    demoLink: "github.com",
+  },
   {
     title: "Hangman",
     img: require("./projectsHeros/hang.jpg"),
@@ -59,14 +69,5 @@ export const myProjects = [
     description:
       "A fun mini Javascript project. This project was built purely with HTML, CSS and JS.",
     demoLink: "https://hangman-eight-dusky.vercel.app",
-  },
-  {
-    title: "Figma Design",
-    img: require("./projectsHeros/figma.jpg"),
-    date: "",
-    client: "Self",
-    categories: ["Figma"],
-    description: "A clone of Spotify",
-    demoLink: "github.com",
   },
 ];

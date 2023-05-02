@@ -42,11 +42,14 @@ body{
   background-image: url('../src/components/images/bg1.jpg');
   background-size: cover;
   background-position: center;
-  margin: 10px;
+  margin: 2px;
 }
 .hover-wrapper {
   position: relative;
   overflow: hidden;
+  transition: height 250ms cubic-bezier(0.4, 0 ,0.2, 1) 0s;
+  /* transform: translate(var(--my-div-width), 0);
+  width: var(--my-div-width); */
 }
 
 .hover-wrapper img {
@@ -74,3 +77,6 @@ body{
 .hover-wrapper:hover .hover-overlay {
   opacity: 1;
 }
+/* :root{
+  --my-div-width: 360px;
+} */
