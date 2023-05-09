@@ -10,6 +10,16 @@ export const myProjects = [
     repoLink: "https://github.com/meggiddy/maggify",
   },
   {
+    title: "Optica(Graduation Project)",
+    img: require("./projectsHeros/OPTICA.png"),
+    date: "4, May 2023",
+    client: "Optica",
+    categories: ["ReactJs", "Tailwind", "Python", "Ruby on Rails"],
+    description:
+      "It was our final project that we did to graduate from Moringa School. Optica has a curated collection of eyewear available in many styles and colors. They face a challenge in viewing all available frames/sunglasses based on the design selected. This challenge reduces efficiency and wastes time for both our customers and staff. A proposal was made to develop an app that enables both customers and staff to efficiently explore their collection by uploading images and displaying similar designs. This application would function as a visual search or recommendation engine.",
+    demoLink: "https://optica-frontend-nu.vercel.app",
+  },
+  {
     title: "Car Rental Services",
     img: require("./projectsHeros/carRental.jpg"),
     date: "2, May 2023",
