@@ -36,7 +36,7 @@ function LandingPage() {
 
       <div className="m-2 p-2 bg-white/30 rounded-xl">
         <div className="flex-grow">
-          <h2 className="text-2xl md:text-3xl font-bold mt-10 text-center mb-10">
+          <h2 className="text-2xl md:text-3xl font-bold mt-10 text-center mb-5">
             Skills and Expertice
           </h2>
           <AnimateOnScroll>

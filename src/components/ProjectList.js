@@ -1,5 +1,32 @@
 export const myProjects = [
   {
+    title: "Luna Africa Mobile App",
+    img: require("./projectsHeros/luna.png"),
+    date: "20, April 2023",
+    client: "Luna Africa, Rwanda",
+    categories: ["React Native"],
+    description: "Converting the Luna Website into a mobile application to ease user experience",
+    demoLink: "https://www.lunafrica.com",
+  },
+  {
+    title: "Custom Website",
+    img: require("./projectsHeros/printer.jpg"),
+    date: "16, May 2023",
+    client: "Zahli Designs",
+    categories: ["ReactJS", "TailwindCSS", "NodeJS"],
+    description: "A mobile football game that you can create a team and play against real players and stand a chance to win money!",
+    demoLink: "https://zahli-designs.vercel.app",
+  },
+  {
+    title: "PlayPesa Mobile App",
+    img: require("./projectsHeros/playpesa.png"),
+    date: "05, May 2023",
+    client: "PlayPesa, Nigeria",
+    categories: ["React Native"],
+    description: "A mobile football game that you can create a team and play against real players and stand a chance to win money!",
+    demoLink: "https://www.playpesaleague.com",
+  },
+  {
     title: "Maggify",
     img: require("./projectsHeros/maggify.jpg"),
     date: "15, April 2023",
@@ -8,6 +35,16 @@ export const myProjects = [
     description: "A clone of Spotify",
     demoLink: "https://maggify.vercel.app",
     repoLink: "https://github.com/meggiddy/maggify",
+  },
+  {
+    title: "Optica(Graduation Project)",
+    img: require("./projectsHeros/OPTICA.png"),
+    date: "4, May 2023",
+    client: "Optica",
+    categories: ["ReactJs", "Tailwind", "Python", "Ruby on Rails"],
+    description:
+      "It was our final project that we did to graduate from Moringa School. Optica has a curated collection of eyewear available in many styles and colors. They face a challenge in viewing all available frames/sunglasses based on the design selected. This challenge reduces efficiency and wastes time for both our customers and staff. A proposal was made to develop an app that enables both customers and staff to efficiently explore their collection by uploading images and displaying similar designs. This application would function as a visual search or recommendation engine.",
+    demoLink: "https://optica-frontend-nu.vercel.app",
   },
   {
     title: "Car Rental Services",
