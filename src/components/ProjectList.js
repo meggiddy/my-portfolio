@@ -1,5 +1,32 @@
 export const myProjects = [
   {
+    title: "Luna Africa Mobile App",
+    img: require("./projectsHeros/luna.png"),
+    date: "20, April 2023",
+    client: "Luna Africa, Rwanda",
+    categories: ["React Native"],
+    description: "Converting the Luna Website into a mobile application to ease user experience",
+    demoLink: "https://www.lunafrica.com",
+  },
+  {
+    title: "Custom Website",
+    img: require("./projectsHeros/printer.jpg"),
+    date: "16, May 2023",
+    client: "Zahli Designs",
+    categories: ["ReactJS", "TailwindCSS", "NodeJS"],
+    description: "A mobile football game that you can create a team and play against real players and stand a chance to win money!",
+    demoLink: "https://zahli-designs.vercel.app",
+  },
+  {
+    title: "PlayPesa Mobile App",
+    img: require("./projectsHeros/playpesa.png"),
+    date: "05, May 2023",
+    client: "PlayPesa, Nigeria",
+    categories: ["React Native"],
+    description: "A mobile football game that you can create a team and play against real players and stand a chance to win money!",
+    demoLink: "https://www.playpesaleague.com",
+  },
+  {
     title: "Maggify",
     img: require("./projectsHeros/maggify.jpg"),
     date: "15, April 2023",

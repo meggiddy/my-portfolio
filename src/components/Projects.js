@@ -11,7 +11,6 @@ function Project({ project }) {
           alt=""
           className="h-auto rounded w-80 block object-cover"
           onMouseEnter={(e) => {
-            console.log(e.currentTarget);
             e.currentTarget.classList.add("opacity-100");
           }}
           onMouseLeave={(e) => {
@@ -44,8 +43,10 @@ function Projects() {
         <label className="px-10 bg-slate-400/50 rounded-full">All</label>
         <label className="px-10 bg-slate-400/50 rounded-full">React</label>
         <label className="px-10 bg-slate-400/50 rounded-full">Ruby</label>
-        <label className="px-10 bg-slate-400/50 rounded-full">Rails</label>
-        <label className="px-10 bg-slate-400/50 rounded-full">Figma</label>
+        <label className="px-10 bg-slate-400/50 rounded-full">React Native</label>
+        <label className="px-10 bg-slate-400/50 rounded-full">PhaserJS</label>
+        <label className="px-10 bg-slate-400/50 rounded-full">Game Development</label>
+        <label className="px-10 bg-slate-400/50 rounded-full">C</label>
         <hr className="my-2 border-white" />
       </div>
 
