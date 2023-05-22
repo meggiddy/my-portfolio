@@ -5,18 +5,21 @@ function Project({ project }) {
   return (
     <div className="col-lg-4 col-6 mb-4 shuffle-item shuffle-item--visible">
       <div className=" flex flex-wrap relative rounded hover-wrapper">
-      {/*<div class="row shuffle-wrapper shuffle" style="position: relative; overflow: hidden; height: 996.781px; transition: height 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;"></div> */}
-        <img
-          src={project.img}
-          alt=""
-          className="h-auto rounded w-80 block object-cover"
+        <div
+          className={"h-64 w-80 relative"}
           onMouseEnter={(e) => {
             e.currentTarget.classList.add("opacity-100");
           }}
           onMouseLeave={(e) => {
             e.currentTarget.classList.remove("opacity-100");
           }}
-        />
+        >
+          <img
+            src={project.img}
+            alt=""
+            className="absolute top-0 left-0 min-w-full min-h-full object-cover"
+          />
+        </div>
         <div className="hover-overlay">
           <Link
             to={`/projects/${project.title}`}
@@ -34,22 +37,30 @@ function Project({ project }) {
 }
 
 function Projects() {
+  const filters = [
+    "All",
+    "React",
+    "Ruby",
+    "React Native",
+    "PhaserJS",
+    "Game Development",
+    "C",
+  ];
+
   return (
     <>
-      <h1 className="font-serif flex justify-center text-6xl md:text-6xl mt-40 mb-32 md:pr-12">
+      <h1 className="font-serif flex justify-center text-6xl md:text-6xl mt-32 mb-24 md:pr-12">
         Projects
       </h1>
-      <div className="flex flex-wrap flex-row gap-4 justify-center">
-        <label className="px-10 bg-slate-400/50 rounded-full">All</label>
-        <label className="px-10 bg-slate-400/50 rounded-full">React</label>
-        <label className="px-10 bg-slate-400/50 rounded-full">Ruby</label>
-        <label className="px-10 bg-slate-400/50 rounded-full">React Native</label>
-        <label className="px-10 bg-slate-400/50 rounded-full">PhaserJS</label>
-        <label className="px-10 bg-slate-400/50 rounded-full">Game Development</label>
-        <label className="px-10 bg-slate-400/50 rounded-full">C</label>
+      <div className="flex pb-8 flex-wrap flex-row gap-4 justify-center">
+        {filters.map((filter) => (
+          <label key={filter} className="px-10 bg-slate-400/50 rounded-full">
+            {filter}
+          </label>
+        ))}
         <hr className="my-2 border-white" />
       </div>
-
+      
       <div className="flex flex-wrap mt-10 mx-4 gap-4 justify-center">
         {myProjects.map((project) => (
           <Project key={project.title} project={project} />

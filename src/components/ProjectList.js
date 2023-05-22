@@ -9,8 +9,8 @@ export const myProjects = [
     demoLink: "https://www.lunafrica.com",
   },
   {
-    title: "Custom Website",
-    img: require("./projectsHeros/printer.jpg"),
+    title: "Zahli Designs  Website",
+    img: require("./projectsHeros/printer.png"),
     date: "16, May 2023",
     client: "Zahli Designs",
     categories: ["ReactJS", "TailwindCSS", "NodeJS"],
@@ -27,6 +27,15 @@ export const myProjects = [
     demoLink: "https://www.playpesaleague.com",
   },
   {
+    title: "PhotoGram (School Project)",
+    img: require("./projectsHeros/photogram.png"),
+    date: "05, April 2023",
+    client: "Self",
+    categories: ["ReactJs", "Spotify API", "Bootstrap", "Ruby on Rails"],
+    description: "An Instagram Clone",
+    repoLink: "https://github.com/meggiddy/photogram-frontend",
+  },
+  {
     title: "Maggify",
     img: require("./projectsHeros/maggify.jpg"),
     date: "15, April 2023",
@@ -37,7 +46,7 @@ export const myProjects = [
     repoLink: "https://github.com/meggiddy/maggify",
   },
   {
-    title: "Optica(Graduation Project)",
+    title: "Optica (Graduation Project)",
     img: require("./projectsHeros/OPTICA.png"),
     date: "4, May 2023",
     client: "Optica",
