@@ -1,7 +1,6 @@
 import "tailwindcss/tailwind.css";
-
 import "./App.css";
-import NavBar from "./components/Nav";
+
 import Hero from "./components/Hero";
 import MidSection from "./components/MidSection";
 import Projects from "./components/Projects";
@@ -11,15 +10,14 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div>
-      <NavBar />
+    <>
       <Hero />
       <MidSection />
       <Projects />
       <Accomplishments />
       <Contact />
       <Footer />
-    </div>
+    </>
   );
 }
 

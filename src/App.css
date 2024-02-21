@@ -1,3 +1,6 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 .App {
   text-align: center;
@@ -15,7 +18,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #fda8db;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -26,6 +29,46 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #ec61fb;
 }
 
+.line {
+  width: 80%; /* Set the width to 80% */
+  height: 1px; /* Set the height to 1px for a horizontal line */
+  margin: 0 auto; /* Center the line horizontally */
+  background-color: #000; /* Set the background color of the line */
+  background-image: linear-gradient(to right, transparent 10%, #000 45%, transparent 55%); /* Apply a linear gradient to make the edges transparent */
+}
+
+.container{
+  display: inline-block;
+  font-family: "Bebas Neue", "sans-serif";
+}
+
+.typed {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing;
+  animation-duration: 5s;
+  animation-timing-function: steps(30, end);
+  animation-fill-mode: forwards;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+.hero{
+  background-image: url(/public/balloon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* typewriter.css */
+@keyframes characters {
+  50% {
+    border-color: transparent;
+  }
+}
