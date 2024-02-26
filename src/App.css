@@ -40,7 +40,7 @@
   background-image: linear-gradient(to right, transparent 10%, #000 45%, transparent 55%); /* Apply a linear gradient to make the edges transparent */
 }
 
-.container{
+.container, #hi{
   display: inline-block;
   font-family: "Bebas Neue", "sans-serif";
 }
@@ -71,4 +71,8 @@
   50% {
     border-color: transparent;
   }
+}
+#gif{
+  background-image: url("https://media.giphy.com/media/6TQJZLG1PxmxplYHSs/giphy.gif");
+  background: no-repeat;
 }

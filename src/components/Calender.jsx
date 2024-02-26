@@ -1,5 +1,13 @@
-function Calendar() {
-    return ( <div>Calender</div> );
-}
+import FullCalendar from '@fullcalendar/react'
+import dayGridPlugin from '@fullcalendar/daygrid' // a plugin!
 
-export default Calendar;
+export default function Calendar() {
+  return (
+    <FullCalendar
+      plugins={[ dayGridPlugin ]}
+      initialView="dayGridMonth"
+      weekends={false}
+      
+    />
+  )
+}
